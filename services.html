@@ -3,71 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Υπηρεσίες | Οδηγοί AI</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f7fb;
-    color:#333;
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
 }
 
 header{
-    background:#1e3a8a;
-    color:white;
-    text-align:center;
-    padding:30px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
 }
 
 nav{
-    background:#2563eb;
-    padding:15px;
-    text-align:center;
+background:#2563eb;
+padding:15px;
+text-align:center;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+margin:0 18px;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+.hero{
+background:#eef4ff;
+padding:50px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:38px;
+color:#1e3a8a;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:20px;
 }
 
 main{
-    max-width:1000px;
-    margin:40px auto;
-    padding:20px;
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
 }
 
 .card{
-    background:white;
-    margin:20px 0;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+background:white;
+width:320px;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.10);
+text-align:center;
 }
 
-h2{
-    color:#1e3a8a;
+.card h3{
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.card p{
+margin-bottom:20px;
 }
 
 .button{
-    display:inline-block;
-    margin-top:25px;
-    background:#2563eb;
-    color:white;
-    padding:12px 24px;
-    border-radius:8px;
-    text-decoration:none;
+display:inline-block;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:.3s;
+}
+
+.button:hover{
+background:#1d4ed8;
+}
+
+.cta{
+text-align:center;
+margin-top:60px;
 }
 
 footer{
-    text-align:center;
-    background:#1e3a8a;
-    color:white;
-    padding:20px;
-    margin-top:40px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:60px;
 }
 
 </style>
@@ -77,41 +129,122 @@ footer{
 <body>
 
 <header>
-<h1>Οι Υπηρεσίες μας</h1>
-<p>Εκπαίδευση και λύσεις Τεχνητής Νοημοσύνης.</p>
+
+<h1>Οδηγοί AI</h1>
+
+<p>Επαγγελματικές υπηρεσίες Τεχνητής Νοημοσύνης</p>
+
 </header>
 
 <nav>
+
 <a href="index.html">Αρχική</a>
 <a href="services.html">Υπηρεσίες</a>
 <a href="#">Άρθρα</a>
 <a href="#">Επικοινωνία</a>
+
 </nav>
+
+<section class="hero">
+
+<h2>Οι Υπηρεσίες μας</h2>
+
+<p>
+
+Σας βοηθάμε να αξιοποιήσετε την Τεχνητή Νοημοσύνη
+με πρακτικές λύσεις, εκπαίδευση και σύγχρονα εργαλεία.
+
+</p>
+
+</section>
 
 <main>
 
+<div class="cards">
+
 <div class="card">
-<h2>🤖 ChatGPT</h2>
-<p>Μαθαίνουμε πώς να χρησιμοποιείς σωστά το ChatGPT για εργασία, επιχειρήσεις και καθημερινότητα.</p>
+
+<h3>🤖 ChatGPT</h3>
+
+<p>
+
+Εκπαίδευση στη σωστή χρήση του ChatGPT για εργασία,
+επιχείρηση και καθημερινότητα.
+
+</p>
+
+<a href="#" class="button">
+
+Μάθε περισσότερα
+
+</a>
+
 </div>
 
 <div class="card">
-<h2>🎨 Δημιουργία εικόνων με AI</h2>
-<p>Δημιουργία επαγγελματικών εικόνων για ιστοσελίδες, social media και διαφήμιση.</p>
+
+<h3>🎨 Δημιουργία Περιεχομένου</h3>
+
+<p>
+
+Δημιουργία εικόνων, κειμένων,
+παρουσιάσεων και περιεχομένου με AI.
+
+</p>
+
+<a href="#" class="button">
+
+Μάθε περισσότερα
+
+</a>
+
 </div>
 
 <div class="card">
-<h2>🚀 Εκπαίδευση</h2>
-<p>Ιδιαίτερα μαθήματα και πρακτικοί οδηγοί για αρχάριους και επαγγελματίες.</p>
+
+<h3>🚀 Συμβουλευτική AI</h3>
+
+<p>
+
+Εξατομικευμένες λύσεις για ιδιώτες,
+επαγγελματίες και επιχειρήσεις.
+
+</p>
+
+<a href="#" class="button">
+
+Μάθε περισσότερα
+
+</a>
+
 </div>
 
-<a href="index.html" class="button">⬅ Επιστροφή στην Αρχική</a>
+</div>
+
+<div class="cta">
+
+<h2>Έτοιμοι να ξεκινήσουμε;</h2>
+
+<p style="margin:20px 0;">
+
+Επικοινωνήστε μαζί μας για να βρούμε την κατάλληλη λύση
+για τις ανάγκες σας.
+
+</p>
+
+<a href="#" class="button">
+
+Επικοινωνήστε μαζί μας
+
+</a>
+
+</div>
 
 </main>
 
 <footer>
 
-© 2026 Οδηγοί AI
+© 2026 Οδηγοί AI | Όλα τα δικαιώματα διατηρούνται.
 
 </footer>
 
