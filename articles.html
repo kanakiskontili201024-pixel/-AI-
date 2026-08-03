@@ -7,6 +7,7 @@
 <title>Άρθρα | Οδηγοί AI</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -62,6 +63,26 @@ margin:auto;
 font-size:20px;
 }
 
+.search-box{
+max-width:600px;
+margin:30px auto;
+padding:0 20px;
+}
+
+.search-box input{
+width:100%;
+padding:14px 18px;
+font-size:17px;
+border:1px solid #cbd5e1;
+border-radius:10px;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#2563eb;
+box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
 main{
 max-width:1100px;
 margin:auto;
@@ -114,66 +135,157 @@ text-align:center;
 padding:25px;
 margin-top:60px;
 }
+
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <h1>Οδηγοί AI</h1>
+
 <p>Άρθρα και Οδηγοί Τεχνητής Νοημοσύνης</p>
+
 </header>
 
 <nav>
+
 <a href="index.html">Αρχική</a>
 <a href="services.html">Υπηρεσίες</a>
 <a href="articles.html">Άρθρα</a>
 <a href="contact.html">Επικοινωνία</a>
+
 </nav>
 
 <section class="hero">
+
 <h2>Άρθρα</h2>
+
 <p>
+
 Ανακάλυψε χρήσιμους οδηγούς, συμβουλές και πρακτικές εφαρμογές
 της Τεχνητής Νοημοσύνης.
+
 </p>
+
 </section>
 
+<div class="search-box">
+
+<input
+type="text"
+id="articleSearch"
+placeholder="Αναζήτησε άρθρο..."
+onkeyup="filterArticles()">
+
+</div>
+
 <main>
+
 <div class="cards">
 
 <div class="card">
+
 <h3>🤖 Τι είναι το ChatGPT;</h3>
+
 <p>
+
 Μάθε πώς λειτουργεί το ChatGPT και πώς μπορεί να σε βοηθήσει
 στην καθημερινότητα και στην εργασία.
+
 </p>
-<a href="chatgpt.html" class="button">Διαβάστε περισσότερα</a>
+
+<a href="chatgpt.html" class="button">
+
+Διαβάστε περισσότερα
+
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>🎨 Δημιουργία εικόνων με AI</h3>
+
 <p>
+
 Μάθε πώς μπορείς να δημιουργείς επαγγελματικές εικόνες
 χρησιμοποιώντας εργαλεία Τεχνητής Νοημοσύνης.
+
 </p>
-<a href="images-ai.html" class="button">Διαβάστε περισσότερα</a>
+
+<a href="images-ai.html" class="button">
+
+Διαβάστε περισσότερα
+
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>🚀 AI για επιχειρήσεις</h3>
+
 <p>
+
 Ανακάλυψε πώς οι επιχειρήσεις χρησιμοποιούν την Τεχνητή Νοημοσύνη
 για να αυξήσουν την παραγωγικότητά τους.
+
 </p>
-<a href="ai-business.html" class="button">Διαβάστε περισσότερα</a>
+
+<a href="ai-business.html" class="button">
+
+Διαβάστε περισσότερα
+
+</a>
+
 </div>
 
 </div>
+
 </main>
-
 <footer>
+
+<h3>Οδηγοί AI</h3>
+
+<p>Μαθαίνουμε μαζί την Τεχνητή Νοημοσύνη.</p>
+
+<p>
+📧 Email:
+<a href="mailto:kanakiskontili201024@gmail.com" style="color:white;">
+kanakiskontili201024@gmail.com
+</a>
+</p>
+
+<p>
+📱 Τηλέφωνο:
+<a href="tel:+306932606203" style="color:white;">
++30 6932 606203
+</a>
+</p>
+
+<p>📍 Ελλάδα</p>
+
+<hr style="margin:20px 0;border:1px solid rgba(255,255,255,.2);">
+
+<p>
+
+<a href="#" style="color:white;margin:0 10px;">Facebook</a>
+
+<a href="#" style="color:white;margin:0 10px;">Instagram</a>
+
+<a href="#" style="color:white;margin:0 10px;">LinkedIn</a>
+
+<a href="#" style="color:white;margin:0 10px;">YouTube</a>
+
+</p>
+
+<p style="margin-top:20px;">
 © 2026 Οδηγοί AI | Όλα τα δικαιώματα διατηρούνται.
+</p>
+
 </footer>
 
 <a href="https://wa.me/306932606203"
@@ -189,10 +301,37 @@ border-radius:50px;
 text-decoration:none;
 font-size:18px;
 font-weight:bold;
-box-shadow:0 4px 12px rgba(0,0,0,0.3);
+box-shadow:0 4px 12px rgba(0,0,0,.3);
 z-index:9999;">
 💬 WhatsApp
 </a>
+
+<script>
+
+function filterArticles(){
+
+const searchValue=document
+.getElementById("articleSearch")
+.value
+.toLowerCase();
+
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+const text=card.textContent.toLowerCase();
+
+if(text.includes(searchValue)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+</script>
 
 </body>
 </html>
