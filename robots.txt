@@ -1,1 +1,5 @@
+User-agent: *
 
+Allow: /
+
+Sitemap: https://kanakiskontili201024-pixel.github.io/-AI-/sitemap.xml
